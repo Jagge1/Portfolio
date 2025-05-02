@@ -1,0 +1,24 @@
+.logo {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+.nav-container{
+  display: flex;
+}
+
+nav {
+
+  background-color: black;
+  width: 100vh;
+}
+
+ul {
+  display: flex;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
