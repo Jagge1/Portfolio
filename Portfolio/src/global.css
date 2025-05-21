@@ -1,7 +1,9 @@
 :root {
     --main-font: "Cascadia Code", sans-serif;
     --text-color: #fff; 
-    --logo-font: 'nter"', sans-serif;
+    --logo-font: 'Inter"', sans-serif;
+    --primary-color: #001727;
+    --secondary-color: #b4ede4;
 }
 
 html {
@@ -15,7 +17,7 @@ html, body {
 }
 
 body {
-    background-color: whitesmoke;
+   background-color: whitesmoke;
    background-repeat: no-repeat;
    background-size: 100% 100%;
    background-attachment: scroll;
