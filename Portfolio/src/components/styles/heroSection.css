@@ -1,15 +1,15 @@
+.hero-section-container{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  gap: 5em;
+}
+
 .portrait {
   height: 22em;
   width: 22em;
   border-radius: 50%;
   margin-left: 15em;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-}
-
-.hero-section-container{
-  display: flex;
-  align-items: center;
-  height: 100vh;
 }
 
 .description-container {
@@ -17,9 +17,53 @@
   flex-direction: column;
   margin-left: 2em;
   margin-bottom: 3em;
-  font-size: 2.5em;
+  font-size: 2em;
+  margin-top: 5em;
 }
 
 .title {
   font-family: var(--main-font);
+  color: var(--secondary-color);
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.name{
+  font-family: var(--main-font);
+  color: var(--text-color);
+  margin: 0;
+}
+
+.my-role{
+  color: #565a6e;
+  font-family: var(--main-font);
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+.description {
+  color: #565a6e;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  max-width: 35em; 
+  line-height: 1.5em;
+}
+
+.resume-dwnld{
+  font-family: var(--main-font);
+  color: var(--accent-color);
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 100;
+  border: 1px solid var(--accent-color);
+  text-align: center;
+  max-width: 12em;
+  padding: 1em;
+  border-radius: 7px;
+  margin-top: 2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-dwnld:hover{
+  transform: scale(1.03);
 }
