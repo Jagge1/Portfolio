@@ -13,7 +13,8 @@ export default function HeroSection(){
         <p className='description'>
           I’m currently a second-year student at Kristianstad University, studying to become a fullstack developer.
           I’m passionate about learning and applying new technologies, and I’m actively looking for opportunities
-          to collaborate, grow, and contribute as a developer.
+          to collaborate, grow, and contribute as a developer. If you are looking to collaborate
+          don't hesitate to contact me.
         </p>
 
         <a href="" className='resume-dwnld'>Download my resume</a>

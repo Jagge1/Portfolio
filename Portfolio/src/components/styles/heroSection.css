@@ -37,7 +37,7 @@
 .my-role{
   color: #565a6e;
   font-family: var(--main-font);
-  margin-top: .5rem;
+  margin-top: .2rem;
   margin-bottom: 0;
 }
 
@@ -47,6 +47,11 @@
   font-size: 16px;
   max-width: 35em; 
   line-height: 1.5em;
+}
+
+.description a {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .resume-dwnld{
