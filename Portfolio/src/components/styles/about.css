@@ -11,7 +11,8 @@
   justify-content: center;
   padding-top: 1em;
   font-size: 3em;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: .5em;
 }
 
 .stack-title {
@@ -21,16 +22,51 @@
 }
 
 .stack-container{
+  display: flex;
   border: 1px solid var(--secondary-color);
-  max-width: 25em;
-  height: 7em;
-  justify-content: center;
-  margin-top: 15em;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: space-evenly;
   border-radius: 7px;
-  margin-top: 5em;
   padding: 2em;
+  gap: 2em;
+  background-color: #021d30;
 }
 
 .tech-icon{
-  height: 60px;
+  height: 30px;
+}
+
+.tech-icon-container{
+  border: 1px solid var(--secondary-color);
+  border-radius: 7px;
+  padding: 1em;
+  justify-items: center;
+  text-align: center;
+}
+
+.icon-text{
+  color: #565a6e;
+  font-family: var(--secondary-font);
+  font-size: small;
+}
+
+.stack-title {
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+
+.about-description-container{
+  border: 1px solid var(--secondary-color);
+  border-radius: 7px;
+  width: 50em;
+  font-size: medium;
+  background-color: #021d30;
+  padding: 2em;
+}
+
+.about-me-description{
+  color: #565a6e;
+  font-family: var(--secondary-font);
+
 }
