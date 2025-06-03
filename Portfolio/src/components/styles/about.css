@@ -43,12 +43,19 @@
   padding: 1em;
   justify-items: center;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.tech-icon-container:hover{
+  transform: scale(1.03);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .icon-text{
   color: #565a6e;
   font-family: var(--secondary-font);
   font-size: small;
+  margin: 0;
 }
 
 .stack-title {
@@ -68,5 +75,11 @@
 .about-me-description{
   color: #565a6e;
   font-family: var(--secondary-font);
-
+  line-height: 1.5;
+  transition: all 0.3s ease-in-out;
 }
+
+.about-me-description:hover{
+  color: white;
+}
+
