@@ -1,0 +1,26 @@
+.project-container{
+  height: 100vh;
+}
+
+.project-section-title{
+  color: var(--text-color);
+  font-family: var(--main-font);
+  text-align: center;
+  padding-top: 1em;
+  font-size: 3em;
+}
+
+.projects{
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+.project-card{
+  border: 1px solid var(--secondary-color);
+  height: 20em;
+  width: 20em;
+  border-radius: 7px;
+}
+
+

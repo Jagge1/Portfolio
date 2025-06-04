@@ -1,5 +1,8 @@
 export default function Contact(){
   return(
-    <h2>Contact me</h2>
+    <section className="contact-container" id="contact">
+
+      <h1>Contact me</h1>
+    </section>
   )
 }

@@ -2,7 +2,7 @@ import './styles/heroSection.css'
 
 export default function HeroSection(){
   return(
-    <div className='hero-section-container'>
+    <section className='hero-section-container'>
       <img src="../assets/Portfolio-Portrait-2.png" alt="Illustration portrait" className="portrait"/>
 
       <article className='description-container'>
@@ -18,7 +18,7 @@ export default function HeroSection(){
 
       </article>
       
-    </div>
+    </section>
   
   )
 }
