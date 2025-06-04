@@ -13,6 +13,10 @@
   font-size: 3em;
   margin-top: 0;
   margin-bottom: .5em;
+  border-bottom: 1px solid var(--secondary-color);
+  width: 10em;
+  text-align: center;
+  padding-bottom: .3em;
 }
 
 .stack-title {
@@ -61,13 +65,17 @@
 .stack-title {
   font-size: 3em;
   margin-bottom: .5em;
+  border-bottom: 1px solid var(--secondary-color);
+  width: 10em;
+  text-align: center;
+  padding-bottom: .3em;
 }
 
 .about-description-container{
   border: 1px solid var(--secondary-color);
   border-radius: 7px;
-  width: 50em;
-  font-size: medium;
+  width: 45em;
+  font-size:large;
   background-color: #021d30;
   padding: 2em;
 }
@@ -75,7 +83,7 @@
 .about-me-description{
   color: #565a6e;
   font-family: var(--secondary-font);
-  line-height: 1.5;
+  line-height: 1.7;
   transition: all 0.3s ease-in-out;
 }
 
