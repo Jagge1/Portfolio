@@ -17,7 +17,7 @@ export default function HeroSection(){
         <a href="" className='resume-dwnld'>Download my resume</a>
 
       </article>
-      
+
     </section>
   
   )

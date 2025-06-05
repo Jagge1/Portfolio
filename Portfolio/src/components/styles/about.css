@@ -56,7 +56,7 @@
 }
 
 .icon-text{
-  color: #565a6e;
+  color: #868997;
   font-family: var(--secondary-font);
   font-size: small;
   margin: 0;
@@ -81,7 +81,7 @@
 }
 
 .about-me-description{
-  color: #565a6e;
+  color: #868997;
   font-family: var(--secondary-font);
   line-height: 1.7;
   transition: all 0.3s ease-in-out;
