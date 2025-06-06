@@ -1,5 +1,8 @@
 .contact-container{
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-title{
@@ -9,6 +12,9 @@
   padding-top: 1em;
   font-size: 3em;
   margin-bottom: 0;
+  border-bottom: 1px solid var(--accent-color);
+  width: 10em;
+  padding-bottom: .3em;
 }
 
 .secondary-title{
@@ -19,4 +25,47 @@
   font-size: 1.5em;
   margin: 0;
   color: #868997;
+  margin-bottom: 2em;
+}
+
+.card-container{
+  display: flex;
+  gap: 5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card {
+  width: 9em;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--secondary-color);
+  padding: 2em;
+  border-radius: 7px;
+  background-color: #021d30;
+}
+
+.contact-icon{
+  height: 4em;
+  object-fit: contain;
+}
+
+.icon-link{
+  font-family: var(--main-font);
+  color: var(--accent-color);
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 100;
+  border: 1px solid var(--accent-color);
+  text-align: center;
+  max-width: 12em;
+  padding: 1em;
+  border-radius: 7px;
+  margin-top: 2em;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-link:hover{
+  transform: scale(1.03);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
