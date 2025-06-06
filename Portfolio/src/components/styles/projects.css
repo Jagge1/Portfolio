@@ -1,5 +1,8 @@
 .project-container{
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-section-title{
@@ -8,6 +11,9 @@
   text-align: center;
   padding-top: 1em;
   font-size: 3em;
+  border-bottom: 1px solid var(--accent-color);
+  width: 10em;
+  padding-bottom: .3em;
 }
 
 .projects{
@@ -17,13 +23,16 @@
 }
 
 .project-card{
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--secondary-color);
-  height: 20em;
+  height: 25em;
   width: 20em;
   border-radius: 7px;
   background-color: #021d30;
   padding: 1em;
   transition: all 0.3s ease-in-out;
+  padding: 2em;
 }
 
 .project-card:hover{
@@ -34,8 +43,45 @@
 .project-card-title{
   text-align: center;
   font-family: var(--main-font);
-  color: var(--text-color);
+  color: var(--secondary-color);
   font-size: 1.3em;
+  margin-bottom: .1em;
+}
+
+.project-description{
+  color: #868997;
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+#solace-icon{
+  height: 4em;
+  margin-top: 1em;
+  object-fit: contain;
+}
+
+#house18-icon{
+  margin-top: 1.5em;
+  height: 3em;
+  object-fit: contain;
+}
+
+#top-paragraph{
+  margin-bottom: 0;
+}
+
+#bottom-paragraph {
+  margin-top: 0;
+}
+
+.project-link{
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 
