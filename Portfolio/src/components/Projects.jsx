@@ -1,10 +1,13 @@
 import './styles/projects.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import useObserver from '../hooks/useObserver';
 
 export default function Projects(){
+  useObserver();
+  
   return(
-    <section className='project-container' id='projects'>
+    <section className='project-container hidden' id='projects'>
       <h1 className='project-section-title'>My Projects</h1>
 
       <section className='projects'>

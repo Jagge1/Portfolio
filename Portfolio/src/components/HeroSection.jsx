@@ -1,8 +1,11 @@
 import './styles/heroSection.css'
+import useObserver from '../hooks/useObserver'
 
 export default function HeroSection(){
+  useObserver();
+
   return(
-    <section className='hero-section-container'>
+    <section className='hero-section-container hidden'>
       <img src="../assets/Portfolio-Portrait-2.png" alt="Illustration portrait" className="portrait"/>
 
       <article className='description-container'>

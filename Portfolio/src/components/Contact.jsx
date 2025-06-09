@@ -1,8 +1,11 @@
 import './styles/contact.css'
+import useObserver from '../hooks/useObserver'
 
 export default function Contact(){
+  useObserver();
+  
   return(
-    <section className="contact-container" id="contact">
+    <section className="contact-container hidden" id="contact">
 
       	<h1 className='contact-title'>Contact</h1>
         <h4 className='secondary-title'>Where to find me</h4>

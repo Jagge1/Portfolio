@@ -7,6 +7,15 @@
     --accent-color: #f4b9ec;
 }
 
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+}
+
 html {
    padding: 0;
    scroll-behavior: smooth;

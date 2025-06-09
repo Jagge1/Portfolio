@@ -1,9 +1,12 @@
 import './styles/header.css'
+import useObserver from '../hooks/useObserver'
 
 export default function Header() {
+  useObserver();
+  
   return(
     <header>
-      <div className="nav-container">
+      <div className="nav-container hidden">
 
         <p className="logo">JH</p>
         <nav>

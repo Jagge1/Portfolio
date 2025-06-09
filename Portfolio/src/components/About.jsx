@@ -1,8 +1,11 @@
 import './styles/about.css'
+import useObserver from '../hooks/useObserver'
 
 export default function About(){
+  useObserver()
+  
   return (
-    <section className='about-container' id='about'>
+    <section className='about-container hidden' id='about'>
       <h1 className='about-me-title'>About me</h1>
 
         <article className='about-description-container'>
