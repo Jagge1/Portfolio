@@ -87,3 +87,8 @@
 .scroll-to-top:hover{
   transform: scale(1.05);
 }
+
+.scroll-to-top-text {
+  font-family: var(--main-font);
+  color: var(--accent-color)
+}

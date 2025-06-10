@@ -33,6 +33,7 @@ export default function Contact(){
         </section>
 
             <a href="#header"><FontAwesomeIcon icon={faArrowUp} className='scroll-to-top'/></a>
+            <p className='scroll-to-top-text'>Scroll to top</p>
     </section>
   )
 }
