@@ -6,7 +6,7 @@ export default function Header() {
   
   return(
     <header>
-      <div className="nav-container hidden">
+      <div className="nav-container hidden" id='header'>
 
         <p className="logo">JH</p>
         <nav>

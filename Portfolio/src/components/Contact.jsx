@@ -1,5 +1,8 @@
 import './styles/contact.css'
 import useObserver from '../hooks/useObserver'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+
 
 export default function Contact(){
   useObserver();
@@ -29,6 +32,7 @@ export default function Contact(){
 
         </section>
 
+            <a href="#header"><FontAwesomeIcon icon={faArrowUp} className='scroll-to-top'/></a>
     </section>
   )
 }

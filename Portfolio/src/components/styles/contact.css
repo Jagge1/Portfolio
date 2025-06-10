@@ -74,3 +74,16 @@
 .icon-link:hover{
   transform: scale(1.03);
 }
+
+.scroll-to-top{
+  height: 2em;
+  text-decoration: none;
+  color: var(--accent-color);
+  cursor: pointer;
+  margin-top: 13em;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover{
+  transform: scale(1.05);
+}
