@@ -104,4 +104,27 @@
   transition: all 0.3s ease-in-out;
 }
 
+@media (max-width:  1600px) {
+  .about-description-container{
+    width: 40em;
+  }
+
+  .stack-title {
+    font-size: 2.5em;
+  }
+
+  .about-me-title {
+    font-size: 2.5em;
+  }
+
+  .tech-icon {
+    height: 20px;
+  }
+
+  .icon-text {
+    font-size: 12px;
+  }
+
+}
+
 
