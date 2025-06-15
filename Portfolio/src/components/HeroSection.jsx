@@ -1,5 +1,7 @@
 import './styles/heroSection.css'
 import useObserver from '../hooks/useObserver'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 export default function HeroSection(){
   useObserver();
@@ -13,9 +15,14 @@ export default function HeroSection(){
         <h2 className='name'>Jacob Hellgren.</h2>
         <h2 className='my-role'>I'm a fullstack developer.</h2>
         
-        <p className='description'>
-          Based in Sweden
-        </p>
+        <article className='location-container'>
+
+          <FontAwesomeIcon icon={faLocationDot} className='location-pin'/>
+          <p className='description'>
+            Based in Sweden
+          </p>          
+        </article>
+
 
         <a href="" className='resume-dwnld'>Download my resume</a>
 

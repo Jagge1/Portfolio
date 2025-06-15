@@ -75,6 +75,17 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.location-pin {
+  color: var(--accent-color);
+  font-size: .7em;
+  margin-top: 10px;
+}
+
+.location-container {
+  display: flex;
+  gap: .4em;
+}
+
 @media (max-width:  1600px) {
   .portrait {
     height: 18em;
