@@ -57,22 +57,21 @@
 }
 
 .icon-link{
-  font-family: var(--main-font);
   color: var(--accent-color);
-  font-size: 16px;
   text-decoration: none;
-  font-weight: 100;
-  border: 1px solid var(--accent-color);
+  font-family: var(--main-font);
+  font-weight: 200;
   text-align: center;
-  max-width: 12em;
-  padding: 1em;
-  border-radius: 7px;
-  margin-top: 2em;
+  margin-top:  1em;
   transition: all 0.3s ease-in-out;
 }
 
-.icon-link:hover{
-  transform: scale(1.03);
+.arrow-link{
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-link:hover .arrow-link {
+  margin-left: 0.5em;
 }
 
 .scroll-to-top{
