@@ -19,7 +19,7 @@ export default function About(){
 
         </article>
 
-      <h3 className='stack-title'>Technologies & Methodologies</h3>
+      <h3 className='stack-title'>Technologies</h3>
 
       <article className='stack-container'>
       
