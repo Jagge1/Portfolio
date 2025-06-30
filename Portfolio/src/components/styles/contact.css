@@ -30,13 +30,13 @@
 
 .card-container{
   display: flex;
-  gap: 5em;
+  gap: 3em;
   align-items: center;
   justify-content: center;
 }
 
 .contact-card {
-  width: 9em;
+  width: 7em;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--secondary-color);
@@ -52,7 +52,7 @@
 }
 
 .contact-icon{
-  height: 4em;
+  height: 3.5em;
   object-fit: contain;
 }
 
