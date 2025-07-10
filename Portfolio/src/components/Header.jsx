@@ -9,6 +9,8 @@ export default function Header() {
       <div className="nav-container hidden" id='header'>
 
         <p className="logo">JH</p>
+        <img src="../assets/Portfolio-Portrait-2.png" alt="Illustration portrait" className="portrait-logo"/>
+
         <nav>
         
           <ul className='nav-links'>

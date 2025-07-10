@@ -104,3 +104,30 @@
   }
 
 }
+
+@media (max-width:  415px){
+
+  .portrait {
+    display: none;
+  }
+
+  .location-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .description-container {
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 7em;
+  }
+
+  .resume-dwnld {
+    font-size: 12px;
+    align-self: center;
+  }
+  
+}

@@ -8,6 +8,10 @@ header {
     height: 5rem;
 }
 
+.portrait-logo {
+  display: none;
+}
+
 .nav-links {
     list-style-type: none;
     display: flex;
@@ -57,4 +61,23 @@ header {
     justify-content: space-between;
     margin-top: 0;
     align-items: center;
+}
+
+@media (max-width:  415px){
+  .logo {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .portrait-logo {
+    display: block;
+    margin-left: 1rem;
+    width: 4.5em;
+    border-radius: 50%;
+  }
+
+
 }
