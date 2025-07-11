@@ -129,5 +129,9 @@
     font-size: 12px;
     align-self: center;
   }
+
+  .location-pin {
+    margin-top: 1.3em;
+  }
   
 }
