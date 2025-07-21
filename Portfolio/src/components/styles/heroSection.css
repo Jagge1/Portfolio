@@ -103,6 +103,10 @@
     font-size: 1.7em;
   }
 
+  .location-pin {
+    margin-top: .9em;
+  }
+
 }
 
 @media (max-width:  415px){
