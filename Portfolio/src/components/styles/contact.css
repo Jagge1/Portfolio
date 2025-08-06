@@ -89,5 +89,6 @@
 
 .scroll-to-top-text {
   font-family: var(--main-font);
-  color: var(--accent-color)
+  color: var(--accent-color);
+  cursor: pointer;
 }
