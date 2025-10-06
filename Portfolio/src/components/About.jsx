@@ -11,7 +11,7 @@ export default function About(){
         <article className='about-description-container'>
 
           <p className='about-me-description'>
-          I’m currently a second-year student at Kristianstad University, studying to become a fullstack developer.
+          I’m currently a Third-year student at Kristianstad University, studying to become a fullstack developer.
           I’m passionate about learning and applying new technologies, and I’m actively looking for opportunities
           to collaborate, grow, and contribute as a developer. If you are looking to collaborate
           don't hesitate to contact me.
