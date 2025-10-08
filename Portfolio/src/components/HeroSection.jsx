@@ -2,13 +2,14 @@ import './styles/heroSection.css'
 import useObserver from '../hooks/useObserver'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import portrait from '../../assets/Portfolio-Portrait-2.png';
 
 export default function HeroSection(){
   useObserver();
 
   return(
     <section className='hero-section-container hidden'>
-      <img src="../assets/Portfolio-Portrait-2.png" alt="Illustration portrait" className="portrait"/>
+      <img src={portrait} alt="Illustration portrait" className="portrait"/>
 
       <article className='description-container'>
         <p className='title'>Hi, my name is...</p>

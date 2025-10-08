@@ -2,6 +2,8 @@ import './styles/projects.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import useObserver from '../hooks/useObserver';
+import house18Logo from '../../assets/house18-logo.png'
+import solaceLogo from '../../assets/solace-logo.png'
 
 export default function Projects(){
   useObserver();
@@ -13,7 +15,7 @@ export default function Projects(){
       <section className='projects'>
 
       <article className='project-card'>
-        <img src="../assets/house18-logo.png" alt="house18-logo" className='project-img' id='house18-icon'/>
+        <img src={house18Logo} alt="house18-logo" className='project-img' id='house18-icon'/>
         {/*<h4 className='project-card-title'>HOUSE 18</h4>*/}
 
         <p className='project-description'>
@@ -29,7 +31,7 @@ export default function Projects(){
       </article>
 
       <article className='project-card'>
-        <img src="../assets/solace-logo.png" alt="solace-logo" className='project-img' id='solace-icon'/>
+        <img src={solaceLogo} alt="solace-logo" className='project-img' id='solace-icon'/>
         {/*<h4 className='project-card-title'>SOLACE</h4>*/}
         
         <p className='project-description' id='top-paragraph'>

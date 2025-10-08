@@ -1,5 +1,16 @@
 import './styles/about.css'
 import useObserver from '../hooks/useObserver'
+import jsLogo from '../../assets/js-logo.png'
+import cssLogo from '../../assets/css-logo.png'
+import htmlLogo from '../../assets/html-logo.png'
+import firebaseLogo from '../../assets/firebase-logo.png'
+import gitLogo from '../../assets/git-logo.png'
+import javaLogo from '../../assets/java-logo.png'
+import mongoCompassLogo from '../../assets/mongodb-compass-logo.png'
+import mysqlLogo from '../../assets/mysql-logo.png'
+import nodeLogo from '../../assets/node-js-logo.png'
+import pythonLogo from '../../assets/python-logo.png'
+import reactLogo from '../../assets/react-logo.png'
 
 export default function About(){
   useObserver()
@@ -24,57 +35,57 @@ export default function About(){
       <article className='stack-container'>
       
       <article className='tech-icon-container'>
-        <img src="../assets/js-logo.png" className='tech-icon' alt="" />
+        <img src={jsLogo} className='tech-icon' alt="" />
         <p className='icon-text'>JavaScript</p>
       </article>
 
       <article className='tech-icon-container'>
-        <img src="../assets/css-logo.png" className='tech-icon' alt="" />
+        <img src={htmlLogo} className='tech-icon' alt="" />
         <p className='icon-text'>HTML5</p>
       </article>
 
         <article className='tech-icon-container'>
-          <img src="../assets/html-logo.png" className='tech-icon' alt="" />
+          <img src={cssLogo} className='tech-icon' alt="" />
           <p className='icon-text'>CSS3</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src="../assets/firebase-logo.png" className='tech-icon' alt="" />
+          <img src={firebaseLogo} className='tech-icon' alt="" />
           <p className='icon-text'>Firebase</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src="../assets/git-logo.png" className='tech-icon' alt="" />
+          <img src={gitLogo} className='tech-icon' alt="" />
           <p className='icon-text'>Git</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src="../assets/java-logo.png" className='tech-icon' alt="" />
+          <img src={javaLogo} className='tech-icon' alt="" />
           <p className='icon-text'>Java</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src="../assets/mongodb-compass-logo.png" className='tech-icon' alt="" />
+          <img src={mongoCompassLogo} className='tech-icon' alt="" />
           <p className='icon-text'>MongoDb</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src="../assets/mysql-logo.png" className='tech-icon' alt="" />
+          <img src={mysqlLogo} className='tech-icon' alt="" />
           <p className='icon-text'>MySQL</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src="../assets/node-js-logo.png" className='tech-icon' alt="" />
+          <img src={nodeLogo} className='tech-icon' alt="" />
           <p className='icon-text'>NodeJs</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src="../assets/python-logo.png" className='tech-icon' alt="" />
+          <img src={pythonLogo} className='tech-icon' alt="" />
           <p className='icon-text'>Python</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src="../assets/react-logo.png" className='tech-icon' alt="" />
+          <img src={reactLogo} className='tech-icon' alt="" />
           <p className='icon-text'>React</p>
         </article>
 

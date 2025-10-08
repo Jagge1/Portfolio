@@ -3,6 +3,9 @@ import useObserver from '../hooks/useObserver'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import githubIcon from '../../assets/github-icon.png'
+import mailIcon from '../../assets/mail-icon.png'
+import linkedinIcon from '../../assets/linkedin-icon.png'
 
 
 export default function Contact(){
@@ -17,17 +20,17 @@ export default function Contact(){
         <section className='card-container'>
 
         <article className='contact-card'>
-          <img src="../assets/github-icon.png" alt="github-icon" className='contact-icon'/>
+          <img src={githubIcon} alt="github-icon" className='contact-icon'/>
           <a href="https://github.com/Jagge1" className='icon-link' target='_blank'>Github <span className='arrow-link'><FontAwesomeIcon icon={faArrowRight} /></span></a>
         </article>
 
         <article className='contact-card'>
-          <img src="../assets/mail-icon.png" alt="mail-icon" className='contact-icon'/>
+          <img src={mailIcon} alt="mail-icon" className='contact-icon'/>
           <a href="mailto:hellgrenjacob@hotmail.com" className='icon-link' target='_blank'>Email <span className='arrow-link'><FontAwesomeIcon icon={faArrowRight} /></span></a>
         </article>
 
         <article className='contact-card'>
-          <img src="../assets/linkedin-icon.png" alt="linkedin-icon" className='contact-icon'/>
+          <img src={linkedinIcon} alt="linkedin-icon" className='contact-icon'/>
           <a href="https://se.linkedin.com/in/jacob-hellgren-a88967325?trk=people-guest_people_search-card" className='icon-link' target='_blank'>LinkedIn <span className='arrow-link'><FontAwesomeIcon icon={faArrowRight} /></span></a>
         </article>
 
