@@ -4,6 +4,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import useObserver from '../hooks/useObserver';
 import house18Logo from '../../assets/house18-logo.png'
 import solaceLogo from '../../assets/solace-logo.png'
+import comingSoonLogo from '../../assets/comingSoon.png'
+import androidLogo from '../../assets/android-logo.png'
 
 export default function Projects(){
   useObserver();
@@ -45,6 +47,18 @@ export default function Projects(){
         </p>
         
         <a href="https://github.com/HugNil/Solace" className='project-link' target='_blank'>View project <span className='arrow-link'><FontAwesomeIcon icon={faArrowRight} /></span></a>
+
+      </article>
+
+            <article className='project-card'>
+        <img src={comingSoonLogo} alt="coming-soon-logo" className='project-img' id='coming-soon-icon'/>
+        {/*<h4 className='project-card-title'>HOUSE 18</h4>*/}
+
+        <p className='project-description'>
+          I am currently working on an android application as part of the course, Development of Mobile Applications.  
+        </p>
+
+        <img src={androidLogo} alt="coming-soon-logo" className='project-img' id='android-icon'/>
 
       </article>
 
