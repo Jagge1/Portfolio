@@ -80,6 +80,11 @@
   margin-top: 0;
 }
 
+#android-icon {
+  height: 7em;
+  object-fit:contain
+}
+
 .project-link{
   color: var(--accent-color);
   text-decoration: none;

@@ -35,57 +35,57 @@ export default function About(){
       <article className='stack-container'>
       
       <article className='tech-icon-container'>
-        <img src={jsLogo} className='tech-icon' alt="" />
+        <img src={jsLogo} className='tech-icon' alt="" id='js-logo'/>
         <p className='icon-text'>JavaScript</p>
       </article>
 
       <article className='tech-icon-container'>
-        <img src={htmlLogo} className='tech-icon' alt="" />
+        <img src={htmlLogo} className='tech-icon' alt="" id='html-logo'/>
         <p className='icon-text'>HTML5</p>
       </article>
 
         <article className='tech-icon-container'>
-          <img src={cssLogo} className='tech-icon' alt="" />
+          <img src={cssLogo} className='tech-icon' alt="" id='css-logo'/>
           <p className='icon-text'>CSS3</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src={firebaseLogo} className='tech-icon' alt="" />
+          <img src={firebaseLogo} className='tech-icon' alt="" id='firebase-logo'/>
           <p className='icon-text'>Firebase</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src={gitLogo} className='tech-icon' alt="" />
+          <img src={gitLogo} className='tech-icon' alt="" id='git-logo'/>
           <p className='icon-text'>Git</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src={javaLogo} className='tech-icon' alt="" />
+          <img src={javaLogo} className='tech-icon' alt="" id='java-logo'/>
           <p className='icon-text'>Java</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src={mongoCompassLogo} className='tech-icon' alt="" />
+          <img src={mongoCompassLogo} className='tech-icon' alt="" id='mongo-logo'/>
           <p className='icon-text'>MongoDb</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src={mysqlLogo} className='tech-icon' alt="" />
+          <img src={mysqlLogo} className='tech-icon' alt="" id='sql-logo'/>
           <p className='icon-text'>MySQL</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src={nodeLogo} className='tech-icon' alt="" />
+          <img src={nodeLogo} className='tech-icon' alt="" id='node-logo'/>
           <p className='icon-text'>NodeJs</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src={pythonLogo} className='tech-icon' alt="" />
+          <img src={pythonLogo} className='tech-icon' alt="" id='python-logo'/>
           <p className='icon-text'>Python</p>
         </article>
 
         <article className='tech-icon-container'>
-          <img src={reactLogo} className='tech-icon' alt="" />
+          <img src={reactLogo} className='tech-icon' alt=""/>
           <p className='icon-text'>React</p>
         </article>
 
