@@ -1,5 +1,6 @@
 import './styles/header.css'
 import useObserver from '../hooks/useObserver'
+import portraitLogo from '../../assets/Portfolio-Portrait-2.png'
 
 export default function Header() {
   useObserver();
@@ -9,7 +10,7 @@ export default function Header() {
       <div className="nav-container hidden" id='header'>
 
         <p className="logo">JH</p>
-        <img src="../assets/Portfolio-Portrait-2.png" alt="Illustration portrait" className="portrait-logo"/>
+        <img src={portraitLogo} alt="Illustration portrait" className="portrait-logo"/>
 
         <nav>
         
