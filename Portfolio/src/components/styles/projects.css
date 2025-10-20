@@ -102,5 +102,166 @@
 .project-link:hover .arrow-link {
   margin-left: 0.5em;
 }
+/* ==== Basjusteringar för bättre respons ==== */
+.project-container {
+  padding-inline: 1rem;
+}
+
+/* Låt korten kunna bryta rad om utrymmet tar slut */
+.projects {
+  flex-wrap: wrap;
+}
+
+/* Undvik att korten blir för smala/breda när de radbryts */
+.project-card {
+  max-width: 22rem;          /* säkerställer rimlig maxbredd på stora skärmar */
+  width: 100%;
+  height: auto;               /* lås inte höjden – låt innehållet styra */
+}
+
+/* Titelbredd bättre på små skärmar */
+.project-section-title {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+/* Mindre stark hover på touch-enheter */
+@media (hover: none) {
+  .project-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .project-card:hover .project-description {
+    color: #868997;
+  }
+}
+
+/* Respektera reducerad rörelse */
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-description,
+  .project-link,
+  .arrow-link {
+    transition: none;
+  }
+}
+
+/* ====== Breakpoints ====== */
+
+/* ≤ 1200px: lite tajtare layout */
+@media (max-width: 1200px) {
+  .projects {
+    gap: 1.5rem;
+  }
+  .project-section-title {
+    font-size: 2.6em;
+  }
+}
+
+/* ≤ 992px: två kolumner */
+@media (max-width: 992px) {
+  .projects {
+    justify-content: center;
+  }
+  .project-card {
+    flex: 1 1 20rem;          /* två kolumner om plats finns */
+  }
+  #android-icon { height: 6em; }
+  #solace-icon { height: 3.5em; }
+  #house18-icon { height: 2.8em; }
+}
+
+/* ≤ 768px: en kolumn, större touch-marginaler */
+@media (max-width: 768px) {
+  .project-container {
+    height: auto;             /* undvik 100vh på mobil */
+    padding-bottom: 2rem;
+  }
+
+  .project-section-title {
+    font-size: 2.2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.25em;
+  }
+
+  .projects {
+    gap: 1.25rem;
+  }
+
+  .project-card {
+    max-width: 34rem;         /* centrera ett kort per rad */
+    padding: 1.25rem;
+  }
+
+  .project-card-title {
+    font-size: 1.15em;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .project-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+
+  #android-icon { height: 5.5em; }
+  #solace-icon { height: 3.2em; }
+  #house18-icon { height: 2.6em; }
+}
+
+@media (max-width: 576px) {
+  .projects {
+    gap: 1rem;
+  }
+
+  .project-section-title {
+    font-size: 1.9em;
+    border-bottom-width: 1px;
+  }
+
+  .project-card {
+    padding: 1rem;
+    border-radius: 6px;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-link {
+    font-size: 0.95rem;
+  }
+
+  #android-icon { height: 5em; }
+  #solace-icon { height: 3em; }
+  #house18-icon { height: 2.4em; }
+}
+
+@media (max-width: 400px) {
+  .project-section-title {
+    font-size: 1.6em;
+  }
+
+  .project-description {
+    font-size: 0.88rem;
+  }
+
+  .projects {
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .projects {
+    gap: 2.5rem;
+  }
+  .project-card {
+    max-width: 24rem;
+  }
+}
 
 
