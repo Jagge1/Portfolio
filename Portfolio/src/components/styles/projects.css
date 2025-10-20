@@ -102,31 +102,27 @@
 .project-link:hover .arrow-link {
   margin-left: 0.5em;
 }
-/* ==== Basjusteringar för bättre respons ==== */
+
 .project-container {
   padding-inline: 1rem;
 }
 
-/* Låt korten kunna bryta rad om utrymmet tar slut */
 .projects {
   flex-wrap: wrap;
 }
 
-/* Undvik att korten blir för smala/breda när de radbryts */
 .project-card {
-  max-width: 22rem;          /* säkerställer rimlig maxbredd på stora skärmar */
+  max-width: 22rem;         
   width: 100%;
-  height: auto;               /* lås inte höjden – låt innehållet styra */
+  height: auto;             
 }
 
-/* Titelbredd bättre på små skärmar */
 .project-section-title {
   width: fit-content;
   max-width: 100%;
   margin-inline: auto;
 }
 
-/* Mindre stark hover på touch-enheter */
 @media (hover: none) {
   .project-card:hover {
     transform: none;
@@ -137,7 +133,6 @@
   }
 }
 
-/* Respektera reducerad rörelse */
 @media (prefers-reduced-motion: reduce) {
   .project-card,
   .project-description,
@@ -147,9 +142,6 @@
   }
 }
 
-/* ====== Breakpoints ====== */
-
-/* ≤ 1200px: lite tajtare layout */
 @media (max-width: 1200px) {
   .projects {
     gap: 1.5rem;
@@ -159,23 +151,21 @@
   }
 }
 
-/* ≤ 992px: två kolumner */
 @media (max-width: 992px) {
   .projects {
     justify-content: center;
   }
   .project-card {
-    flex: 1 1 20rem;          /* två kolumner om plats finns */
+    flex: 1 1 20rem;     
   }
   #android-icon { height: 6em; }
   #solace-icon { height: 3.5em; }
   #house18-icon { height: 2.8em; }
 }
 
-/* ≤ 768px: en kolumn, större touch-marginaler */
 @media (max-width: 768px) {
   .project-container {
-    height: auto;             /* undvik 100vh på mobil */
+    height: auto;           
     padding-bottom: 2rem;
   }
 
@@ -190,7 +180,7 @@
   }
 
   .project-card {
-    max-width: 34rem;         /* centrera ett kort per rad */
+    max-width: 34rem;    
     padding: 1.25rem;
   }
 
