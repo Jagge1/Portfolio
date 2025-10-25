@@ -52,7 +52,7 @@ export default function Projects(){
 
             <article className='project-card'>
         <img src={comingSoonLogo} alt="coming-soon-logo" className='project-img' id='coming-soon-icon'/>
-        {/*<h4 className='project-card-title'>HOUSE 18</h4>*/}
+        {/*<h4 className='project-card-title'>Android Project</h4>*/}
 
         <p className='project-description'>
           I am currently working on an android application as part of the course, Development of Mobile Applications.  
