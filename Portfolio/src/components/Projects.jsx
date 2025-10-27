@@ -55,7 +55,8 @@ export default function Projects(){
         {/*<h4 className='project-card-title'>Android Project</h4>*/}
 
         <p className='project-description'>
-          I am currently working on an android application as part of the course, Development of Mobile Applications.  
+          I am currently working on an android application as part of the course, Development of Mobile Applications. The project will be using
+          MVVM Architecture.
         </p>
 
         <img src={androidLogo} alt="coming-soon-logo" className='project-img' id='android-icon'/>
