@@ -6,6 +6,7 @@ import house18Logo from '../../assets/house18-logo.png'
 import solaceLogo from '../../assets/solace-logo.png'
 import comingSoonLogo from '../../assets/comingSoon.png'
 import androidLogo from '../../assets/android-logo.png'
+import tryggaLogo from '../../assets/trygga-tillsammans.png'
 
 export default function Projects(){
   useObserver();
@@ -51,15 +52,18 @@ export default function Projects(){
       </article>
 
             <article className='project-card'>
-        <img src={comingSoonLogo} alt="coming-soon-logo" className='project-img' id='coming-soon-icon'/>
+        <img src={tryggaLogo} alt="trygga-logo" className='project-img' id='trygga-icon'/>
         {/*<h4 className='project-card-title'>Android Project</h4>*/}
 
-        <p className='project-description'>
-          I am currently working on an android application as part of the course, Development of Mobile Applications. The project will be using
-          MVVM Architecture.
+        <p className='project-description' id='top-paragraph'>
+          "Trygga tillsammans" is an android application built during the Android development course at Kristianstad University in collaboration with Combitech.
+        </p>
+        <br />
+        <p className='project-description' id='bottom-paragraph'>
+          The application aims to educate the public, strengthening confidence and understanding of Sweden’s total defense
         </p>
 
-        <img src={androidLogo} alt="coming-soon-logo" className='project-img' id='android-icon'/>
+         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7397155490373357568/" className='project-link' target='_blank'>View project<span className='arrow-link'><FontAwesomeIcon icon={faArrowRight} /></span></a>
 
       </article>
 

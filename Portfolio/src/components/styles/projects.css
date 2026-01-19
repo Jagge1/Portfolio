@@ -111,6 +111,13 @@
   flex-wrap: wrap;
 }
 
+#trygga-icon {
+  border-radius: 10%;
+  width: 30%;
+  height: auto;
+  align-self: center;
+}
+
 .project-card {
   max-width: 22rem;         
   width: 100%;
