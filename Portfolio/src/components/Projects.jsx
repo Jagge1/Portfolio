@@ -63,7 +63,7 @@ export default function Projects(){
           The application aims to educate the public, strengthening confidence and understanding of Sweden’s total defense
         </p>
 
-         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7397155490373357568/" className='project-link' target='_blank'>View project<span className='arrow-link'><FontAwesomeIcon icon={faArrowRight} /></span></a>
+         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7397155490373357568/" className='project-link' target='_blank'>View project <span className='arrow-link'><FontAwesomeIcon icon={faArrowRight} /></span></a>
 
       </article>
 
