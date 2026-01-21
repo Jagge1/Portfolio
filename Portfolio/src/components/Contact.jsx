@@ -3,9 +3,9 @@ import useObserver from '../hooks/useObserver'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import githubIcon from '../../assets/github-icon.png'
-import mailIcon from '../../assets/mail-icon.png'
-import linkedinIcon from '../../assets/linkedin-icon.png'
+import githubIcon from '../assets/github-icon.png'
+import mailIcon from '../assets/mail-icon.png'
+import linkedinIcon from '../assets/linkedin-icon.png'
 
 
 export default function Contact(){

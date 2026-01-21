@@ -2,7 +2,7 @@ import './styles/heroSection.css'
 import useObserver from '../hooks/useObserver'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import portrait from '../../assets/Portfolio-Portrait-2.png';
+import portrait from '../assets/Portfolio-Portrait-2.png';
 
 export default function HeroSection(){
   useObserver();

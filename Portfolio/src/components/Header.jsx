@@ -1,6 +1,6 @@
 import './styles/header.css'
 import useObserver from '../hooks/useObserver'
-import portraitLogo from '../../assets/Portfolio-Portrait-2.png'
+import portraitLogo from '../assets/Portfolio-Portrait-2.png'
 
 export default function Header() {
   useObserver();
