@@ -4,8 +4,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import useObserver from '../hooks/useObserver';
 import house18Logo from '../assets/house18-logo.png'
 import solaceLogo from '../assets/solace-logo.png'
-import comingSoonLogo from '../assets/comingSoon.png'
-import androidLogo from '../assets/android-logo.png'
 import tryggaLogo from '../assets/trygga-tillsammans.png'
 
 export default function Projects(){
