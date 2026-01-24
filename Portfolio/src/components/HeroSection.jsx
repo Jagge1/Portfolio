@@ -25,7 +25,7 @@ export default function HeroSection(){
         </article>
 
 
-        <a href="/Jacob_Hellgren_-_.pdf" download className='resume-dwnld'>Download my resume</a>
+        <a href="/Jacob_Hellgren_-_.pdf" download="Jacob_Hellgren_-_" className='resume-dwnld'>Download my resume</a>
 
       </article>
 
