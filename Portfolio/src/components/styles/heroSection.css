@@ -1,25 +1,26 @@
 .hero-section-container{
   display: flex;
   align-items: center;
-  height: 100vh;
-  gap: 5em;
+  justify-content: center;
+  min-height: 100svh;
+  gap: clamp(2rem, 6vw, 5rem);
+  padding: clamp(6rem, 10vw, 8rem) clamp(1.25rem, 6vw, 5rem) 3rem;
+  box-sizing: border-box;
 }
 
 
 .portrait {
-  height: 22em;
-  width: 22em;
+  height: clamp(12rem, 28vw, 22rem);
+  width: clamp(12rem, 28vw, 22rem);
   border-radius: 50%;
-  margin-left: 15em;
+  flex-shrink: 0;
 }
 
 .description-container {
   display: flex;
   flex-direction: column;
-  margin-left: 2em;
-  margin-bottom: 3em;
-  font-size: 2em;
-  margin-top: 5em;
+  width: min(100%, 42rem);
+  font-size: clamp(1rem, 1.25vw + 0.6rem, 1.75rem);
 }
 
 .title {
@@ -33,6 +34,7 @@
   font-family: var(--main-font);
   color: var(--text-color);
   margin: 0;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
 }
 
 .my-role{
@@ -40,14 +42,15 @@
   font-family: var(--main-font);
   margin-top: .2rem;
   margin-bottom: 0;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
 }
 
 .description {
   color: #565a6e;
   font-family: var(--secondary-font);
-  font-size: 16px;
-  max-width: 35em; 
-  line-height: 1.5em;
+  font-size: clamp(0.98rem, 0.35vw + 0.9rem, 1.05rem);
+  max-width: 35em;
+  line-height: 1.6;
 }
 
 .description a {
@@ -58,13 +61,14 @@
 .resume-dwnld{
   font-family: var(--main-font);
   color: var(--accent-color);
-  font-size: 16px;
+  font-size: clamp(0.88rem, 0.35vw + 0.8rem, 1rem);
   text-decoration: none;
   font-weight: 100;
   border: 1px solid var(--accent-color);
   text-align: center;
-  max-width: 12em;
-  padding: 1em;
+  width: fit-content;
+  max-width: 100%;
+  padding: 1em 1.25em;
   border-radius: 7px;
   margin-top: 2em;
   transition: all 0.3s ease-in-out;
@@ -77,82 +81,20 @@
 
 .location-pin {
   color: var(--accent-color);
-  font-size: .7em;
-  margin-top: 10px;
+  font-size: 0.7em;
+  margin-top: 0.55rem;
 }
 
 .location-container {
   display: flex;
-  gap: .4em;
-}
-
-@media (max-width:  1600px) {
-  .portrait {
-    height: 18em;
-    width: 18em;
-  }
-  .description-container {
-    font-size: 1.5em;
-  }
-
-  .name {
-    font-size: 1.7em;
-  }
-
-  .my-role {
-    font-size: 1.7em;
-  }
-
-  .location-pin {
-    margin-top: .9em;
-  }
-
-}
-
-@media (max-width:  415px){
-
-  .portrait {
-    display: none;
-  }
-
-  .location-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .description-container {
-    font-size: 1.2em;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-left: 0;
-    margin-bottom: 7em;
-  }
-
-  .resume-dwnld {
-    font-size: 12px;
-    align-self: center;
-  }
-
-  .location-pin {
-    margin-top: 1.3em;
-  }
-  
+  align-items: center;
+  gap: .45em;
 }
 
 @media (max-width: 1200px) {
   .hero-section-container {
-    gap: 3em;
-  }
-
-  .portrait {
-    height: 16em;
-    width: 16em;
-    margin-left: 8em;
-  }
-
-  .description-container {
-    font-size: 1.3em;
+    gap: clamp(2rem, 4vw, 3.5rem);
+    padding-top: clamp(5.5rem, 9vw, 7rem);
   }
 }
 
@@ -160,64 +102,62 @@
   .hero-section-container {
     flex-direction: column;
     justify-content: center;
-    gap: 2em;
-  }
-
-  .portrait {
-    margin-left: 0;
-    height: 14em;
-    width: 14em;
+    text-align: center;
   }
 
   .description-container {
-    margin: 0;
-    font-size: 1.2em;
-    text-align: center;
     align-items: center;
-  }
-
-  .resume-dwnld {
-    font-size: 14px;
+    width: min(100%, 36rem);
   }
 }
 
 @media (max-width: 768px) {
-  .portrait {
-    height: 12em;
-    width: 12em;
+  .hero-section-container {
+    padding-inline: 1rem;
+    padding-bottom: 2.5rem;
   }
 
   .description-container {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .resume-dwnld {
-    max-width: 10em;
-    font-size: 13px;
+    width: 100%;
+    max-width: 18rem;
   }
 }
 
 @media (max-width: 576px) {
   .hero-section-container {
-    flex-direction: column;
-    height: auto;
-    gap: 1.5em;
+    min-height: auto;
+    gap: 1.5rem;
+    padding-top: 5.5rem;
   }
 
   .portrait {
-    height: 10em;
-    width: 10em;
-    margin-left: 0;
+    height: clamp(8.5rem, 32vw, 10rem);
+    width: clamp(8.5rem, 32vw, 10rem);
   }
 
   .description-container {
-    margin: 0;
-    font-size: 1em;
-    text-align: center;
+    width: 100%;
   }
 
   .resume-dwnld {
-    font-size: 12px;
     padding: 0.8em;
+  }
+
+  .location-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px){
+  .portrait {
+    display: none;
+  }
+
+  .hero-section-container {
+    padding-top: 5rem;
   }
 }

@@ -5,28 +5,31 @@ header {
     top: 0;
     z-index: 1000;
     margin: 0;
-    height: 5rem;
+    min-height: 5rem;
 }
 
 .portrait-logo {
   display: none;
+  width: 3.25rem;
+  border-radius: 50%;
 }
 
 .nav-links {
     list-style-type: none;
     display: flex;
-    gap: 1rem;
+    gap: clamp(0.75rem, 1.5vw, 1.5rem);
     align-content: center;
     justify-content: right;
     font-family: var(--main-font);
-    margin-right: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li a {
   position: relative;
   text-decoration: none;
   color: var(--text-color);
-  font-size: 18px;
+  font-size: clamp(0.9rem, 0.75rem + 0.25vw, 1.05rem);
 }
 
 .nav-links li a::before {
@@ -48,22 +51,36 @@ header {
 .logo {
     color: var(--text-color);
     font-family: var(--main-font);
-    font-size: 18px;
-    margin-left: 2rem;
+    font-size: clamp(0.95rem, 0.8rem + 0.25vw, 1.1rem);
     border: 1px solid var(--text-color);
     padding: 0.5em;
     border-radius: 50%;
+    margin: 0;
 }
 
 .nav-container {
     display: flex;
-    margin-top: 1rem;
     justify-content: space-between;
-    margin-top: 0;
     align-items: center;
+    min-height: 5rem;
+    padding-inline: clamp(1rem, 4vw, 2rem);
 }
 
-@media (max-width:  415px){
+@media (max-width: 768px) {
+  header {
+    min-height: 4.5rem;
+  }
+
+  .nav-container {
+    min-height: 4.5rem;
+  }
+
+  .nav-links {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
   .logo {
     display: none;
   }
@@ -73,12 +90,12 @@ header {
   }
 
   .portrait-logo {
-    display: block;
-    margin-left: 1.7rem;
-    margin-top: .3rem;
-    width: 4em;
-    border-radius: 50%;
+    display: none;
   }
+}
 
-
+@media (max-width: 400px) {
+  .nav-container {
+    padding-inline: 0.85rem;
+  }
 }
