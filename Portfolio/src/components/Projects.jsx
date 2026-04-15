@@ -30,7 +30,7 @@ const projects = [
     image: interactiveHouseLogo,
     alt: 'interactive-house-logo',
     imageId: 'interactive-house-icon',
-    tech: ['FastAPI', 'Python', 'PyTest'],
+    tech: ['FastAPI', 'Python', 'PyTest', 'Firebase'],
     paragraphs: [
       '"Interactive House" is a multiplatform application built during the Software Development course at Kristianstad University.',
       'The application is made to control an arduino house, simulating a real house with lights and fans etc.',
@@ -45,7 +45,7 @@ const projects = [
     image: tryggaLogo,
     alt: 'trygga-logo',
     imageId: 'trygga-icon',
-    tech: ['Android', 'Kotlin', 'Android Studio'],
+    tech: ['Android', 'Kotlin', 'Firebase'],
     paragraphs: [
       '"Trygga tillsammans" is an Android application built during the Android development course at Kristianstad University in collaboration with Combitech.',
       'The application aims to educate the public, strengthening confidence and understanding of Sweden\'s total defense.',
