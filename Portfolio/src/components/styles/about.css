@@ -218,5 +218,28 @@
   }
 }
 
+@media (min-width: 1400px) and (min-height: 900px) {
+  .about-container {
+    justify-content: center;
+    gap: 1.5rem;
+    padding-block: 2rem;
+    box-sizing: border-box;
+  }
+
+  .about-me-title,
+  .stack-title {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .about-description-container {
+    width: min(46rem, 100%);
+  }
+
+  .stack-container {
+    width: min(100%, 48rem);
+    justify-content: center;
+  }
+}
 
 

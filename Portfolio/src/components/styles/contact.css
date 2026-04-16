@@ -207,6 +207,28 @@
   .contact-card{ max-width: 19rem; }
 }
 
+@media (min-width: 1400px) and (min-height: 900px) {
+  .contact-container {
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+
+  .contact-title {
+    padding-top: 0;
+  }
+
+  .secondary-title {
+    padding-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .scroll-to-top {
+    margin-top: 4rem;
+  }
+}
+
 @media (min-width: 1400px) {
   .card-container{ gap: 3rem; }
   .contact-card{ max-width: 14rem; }
