@@ -18,7 +18,8 @@ const projects = [
     tech: ['React', 'Node.js', 'MongoDB', 'CSS'],
     paragraphs: [
       '"House 18" is a fullstack web application built as part of a university project during the course Full Stack Development at Kristianstad University.',
-      'The app simulates a modern clothing store with user authentication, a responsive shopping experience and admin product management.'
+      'The app simulates a modern clothing store with user authentication, a responsive shopping experience and admin product management.',
+      'Please note: items on the store page may take a minute to load if the database has been inactive for a while.'
     ],
     links: [
       { href: 'https://github.com/nickem00/house-18', label: 'View project' },
