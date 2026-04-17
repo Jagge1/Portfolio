@@ -14,9 +14,10 @@ import reactLogo from '../assets/react-logo.png'
 import kotlinLogo from '../assets/kotlin-logo.png'
 import postgresqlLlogo from '../assets/Postgresql-logo.png'
 import fastapiLogo from '../assets/fastapi-logo.png'
-import expressLogo from '../assets/expressjs-logo.png'
+import expressLogo from '../assets/expressJs-logo.png'
 import unitTestLogo from '../assets/unit-test-logo.png'
 import sqlAlchemyLogo from '../assets/sqlalchemy-logo.png'
+import androidStudioLogo from '../assets/android-studio-logo.png'
 
 export default function About(){
   useObserver()
@@ -143,6 +144,11 @@ export default function About(){
             <article className='tech-icon-container'>
               <img src={unitTestLogo} className='tech-icon' alt="" id='unittest-logo'/>
               <p className='icon-text'>Unit testing</p>
+            </article>
+
+            <article className='tech-icon-container'>
+              <img src={androidStudioLogo} className='tech-icon' alt="" id='unittest-logo'/>
+              <p className='icon-text'>Android Development</p>
             </article>
           </div>
         </article>
