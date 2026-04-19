@@ -18,6 +18,7 @@ import expressLogo from '../assets/expressJs-logo.png'
 import unitTestLogo from '../assets/unit-test-logo.png'
 import sqlAlchemyLogo from '../assets/sqlalchemy-logo.png'
 import androidStudioLogo from '../assets/android-studio-logo.png'
+import dockerLogo from '../assets/docker-logo.png'
 
 export default function About(){
   useObserver()
@@ -147,8 +148,13 @@ export default function About(){
             </article>
 
             <article className='tech-icon-container'>
-              <img src={androidStudioLogo} className='tech-icon' alt="" id='unittest-logo'/>
+              <img src={androidStudioLogo} className='tech-icon' alt="" id='android-logo'/>
               <p className='icon-text'>Android Development</p>
+            </article>
+
+            <article className='tech-icon-container'>
+              <img src={dockerLogo} className='tech-icon' alt="" id='docker-logo'/>
+              <p className='icon-text'>Docker</p>
             </article>
           </div>
         </article>
