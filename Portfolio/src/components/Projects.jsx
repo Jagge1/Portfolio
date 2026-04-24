@@ -86,11 +86,11 @@ const projects = [
 ];
 
 function getSlidesPerView(width) {
-  if (width <= 576) {
+  if (width <= 793) {
     return 1;
   }
 
-  if (width <= 992) {
+  if (width <= 1200) {
     return 2;
   }
 
@@ -195,7 +195,8 @@ export default function Projects() {
             className='projects-track'
             style={{
               '--slides-per-view': slidesPerView,
-              transform: `translateX(calc(-1 * ${currentIndex} * ((100% - (var(--carousel-gap) * (${slidesPerView} - 1))) / ${slidesPerView} + var(--carousel-gap))))`,
+              '--slide-size': `calc((100% - (var(--carousel-gap) * (${slidesPerView} - 1))) / ${slidesPerView})`,
+              transform: `translateX(calc(-1 * ${currentIndex} * (var(--slide-size) + var(--carousel-gap))))`,
               transition: isAnimating ? 'transform 0.45s ease' : 'none',
             }}
             onTransitionEnd={handleTransitionEnd}

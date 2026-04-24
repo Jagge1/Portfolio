@@ -88,7 +88,7 @@
 }
 
 .project-slide {
-  flex: 0 0 calc((100% - (var(--carousel-gap) * (var(--slides-per-view) - 1))) / var(--slides-per-view));
+  flex: 0 0 var(--slide-size);
   min-width: 0;
 }
 
@@ -277,6 +277,137 @@
   .project-section-title {
     font-size: 2.6em;
   }
+
+  .project-card {
+    padding: 1.6rem;
+    gap: 0.85rem;
+  }
+
+  .project-content {
+    margin-top: 0.7rem;
+    gap: 0.75rem;
+  }
+
+  .project-card-footer {
+    gap: 0.9rem;
+    margin-top: 0.6rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .project-tech-list {
+    gap: 0.42rem;
+  }
+
+  .project-tech-badge {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.66rem;
+  }
+
+  .project-links {
+    gap: 0.75rem;
+  }
+
+  .project-link {
+    font-size: 0.98rem;
+  }
+
+  #interactive-house-icon,
+  #portfolio-icon {
+    max-height: 5.25rem;
+  }
+
+  #trygga-icon {
+    width: 28%;
+  }
+
+  #solace-icon {
+    height: 3.4em;
+  }
+
+  #house18-icon {
+    height: 2.7em;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1366px) and (min-width: 769px) {
+  .project-section-title {
+    font-size: 2.3rem;
+  }
+
+  .projects-carousel {
+    max-width: min(86rem, calc(100vw - 0.75rem));
+  }
+
+  .projects-viewport {
+    padding-inline: 1.1rem;
+    padding-block: 1.25rem 3rem;
+  }
+
+  .carousel-button {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .project-card {
+    padding: 1.35rem;
+    gap: 0.7rem;
+  }
+
+  .project-content {
+    margin-top: 0.45rem;
+    gap: 0.6rem;
+  }
+
+  .project-card-footer {
+    gap: 0.75rem;
+    margin-top: 0.45rem;
+  }
+
+  .project-description {
+    font-size: 0.88rem;
+    line-height: 1.38;
+  }
+
+  .project-tech-list {
+    gap: 0.35rem;
+  }
+
+  .project-tech-badge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.58rem;
+  }
+
+  .project-links {
+    gap: 0.65rem;
+  }
+
+  .project-link {
+    font-size: 0.9rem;
+  }
+
+  #house18-icon {
+    height: 2.4rem;
+    margin-top: 0.75rem;
+  }
+
+  #interactive-house-icon,
+  #portfolio-icon {
+    max-height: 4.5rem;
+  }
+
+  #solace-icon {
+    height: 2.9rem;
+    margin-top: 0.6rem;
+  }
+
+  #trygga-icon {
+    width: 24%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -284,9 +415,38 @@
     gap: 0.75rem;
   }
 
+  .project-card {
+    padding: 1.35rem;
+    gap: 0.75rem;
+  }
+
+  .project-content {
+    margin-top: 0.55rem;
+    gap: 0.65rem;
+  }
+
+  .project-card-footer {
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .project-description {
+    font-size: 0.88rem;
+    line-height: 1.4;
+  }
+
+  .project-tech-badge {
+    padding: 0.28rem 0.55rem;
+    font-size: 0.62rem;
+  }
+
+  .project-link {
+    font-size: 0.92rem;
+  }
+
   #android-icon { height: 6em; }
-  #interactive-house-icon { max-height: 5.5rem; }
-  #portfolio-icon { max-height: 9rem; }
+  #interactive-house-icon { max-height: 4.8rem; }
+  #portfolio-icon { max-height: 5rem; }
   #solace-icon { height: 3.5em; }
   #house18-icon { height: 2.8em; }
 }
@@ -344,6 +504,18 @@
   #portfolio-icon { max-height: 8rem; }
   #solace-icon { height: 3.2em; }
   #house18-icon { height: 2.6em; }
+}
+
+@media (max-width: 793px) {
+  .projects-carousel {
+    grid-template-columns: auto minmax(0, 32rem) auto;
+    justify-content: center;
+  }
+
+  .projects-viewport {
+    width: min(100%, 32rem);
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 576px) {
