@@ -19,6 +19,9 @@ import unitTestLogo from '../assets/unit-test-logo.png'
 import sqlAlchemyLogo from '../assets/sqlalchemy-logo.png'
 import androidStudioLogo from '../assets/android-studio-logo.png'
 import dockerLogo from '../assets/docker-logo.png'
+import neovimLogo from '../assets/neovim-logo.png'
+import linuxLogo from '../assets/linux-logo-png.png'
+import rustLogo from '../assets/rust-logo.png'
 
 export default function About(){
   useObserver()
@@ -155,6 +158,26 @@ export default function About(){
             <article className='tech-icon-container'>
               <img src={dockerLogo} className='tech-icon' alt="" id='docker-logo'/>
               <p className='icon-text'>Docker</p>
+            </article>
+
+            <article className='tech-icon-container'>
+              <img src={neovimLogo} className='tech-icon' alt="" id='neovim-logo'/>
+              <p className='icon-text'>Neovim</p>
+            </article>
+          </div>
+        </article>
+
+        <article className='stack-container stack-container--compact' id='currently-learning'>
+          <h4 className='stack-category-title'>Currently Learning</h4>
+          <div className='tech-grid'>
+            <article className='tech-icon-container'>
+              <img src={linuxLogo} className='tech-icon' alt="" id='linux-logo'/>
+              <p className='icon-text'>Linux</p>
+            </article>
+
+            <article className='tech-icon-container'>
+              <img src={rustLogo} className='tech-icon' alt="" id='rust-logo'/>
+              <p className='icon-text'>Rust</p>
             </article>
           </div>
         </article>

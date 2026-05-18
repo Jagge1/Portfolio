@@ -47,6 +47,13 @@
   color: var(--text-color);
   font-family: var(--main-font);
   justify-content: center;
+  font-size: var(--about-title-size);
+  margin-top: 1rem;
+  margin-bottom: .5em;
+  border-bottom: 1px solid var(--accent-color);
+  width: 10em;
+  text-align: center;
+  padding-bottom: .3em;
 }
 
 .stack-container{
@@ -63,6 +70,12 @@
   flex: 0 1 var(--about-card-width);
 }
 
+.stack-container--compact {
+  width: min(100%, 11.25rem);
+  min-height: 9.75rem;
+  flex: 0 1 11.25rem;
+}
+
 .stack-category-title {
   color: var(--text-color);
   font-family: var(--main-font);
@@ -71,6 +84,7 @@
   margin: 0;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--accent-color);
+  white-space: nowrap;
 }
 
 .tech-grid {
@@ -102,7 +116,6 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-
 .icon-text{
   color: #868997;
   font-family: var(--secondary-font);
@@ -113,17 +126,6 @@
 
 .tech-icon-container:hover .icon-text{
   color: white;
-}
-
-
-.stack-title {
-  font-size: var(--about-title-size);
-  margin-top: 1rem;
-  margin-bottom: .5em;
-  border-bottom: 1px solid var(--accent-color);
-  width: 10em;
-  text-align: center;
-  padding-bottom: .3em;
 }
 
 .about-description-container{
@@ -152,19 +154,19 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 1920px) and (min-width: 769px) {
+@media (max-width: 1500px) and (min-width: 1201px) {
   .about-container {
-    --about-title-size: 2.1rem;
-    --about-section-width: 72rem;
-    --about-section-gap: 0.85rem;
+    --about-title-size: 2rem;
+    --about-section-width: 74rem;
+    --about-section-gap: 0.75rem;
     --about-card-width: 12rem;
-    --about-card-padding: 0.72rem;
-    --about-card-gap: 0.55rem;
+    --about-card-padding: 0.75rem;
+    --about-card-gap: 0.6rem;
     --about-category-title-size: 0.82rem;
-    --about-tech-gap: 0.42rem;
-    --about-tech-card-height: 3.85rem;
-    --about-tech-card-padding: 0.42rem;
-    --about-icon-size: 1.55rem;
+    --about-tech-gap: 0.5rem;
+    --about-tech-card-height: 3.9rem;
+    --about-tech-card-padding: 0.5rem;
+    --about-icon-size: 1.7rem;
     --about-icon-text-size: 0.58rem;
     --about-copy-width: 36rem;
     --about-copy-size: 0.9rem;
@@ -176,35 +178,43 @@
   .about-me-description {
     line-height: 1.5;
   }
-}
 
-@media (max-width: 1366px) and (min-width: 769px) {
-  .about-container {
-    --about-title-size: 1.85rem;
-    --about-section-width: 58rem;
-    --about-card-width: 10.8rem;
-    --about-card-padding: 0.68rem;
-    --about-category-title-size: 0.72rem;
-    --about-tech-card-height: 3.65rem;
-    --about-icon-size: 1.45rem;
-    --about-icon-text-size: 0.54rem;
-    --about-copy-width: 34rem;
-    --about-copy-size: 0.86rem;
+  .stack-container--compact {
+    width: min(100%, 10rem);
+    min-height: 8.8rem;
+    flex: 0 1 10rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 993px) {
   .about-container {
-    --about-title-size: 2rem;
-    --about-section-width: 52rem;
-    --about-section-gap: 0.8rem;
-    --about-card-width: 11.2rem;
-    --about-card-padding: 0.75rem;
-    --about-category-title-size: 0.9rem;
-    --about-tech-card-height: 4.1rem;
-    --about-icon-size: 1.75rem;
-    --about-icon-text-size: 0.64rem;
-    --about-copy-width: 40rem;
+    --about-title-size: 1.85rem;
+    --about-section-width: 64rem;
+    --about-section-gap: 0.55rem;
+    --about-card-width: 9.5rem;
+    --about-card-padding: 0.55rem;
+    --about-card-gap: 0.45rem;
+    --about-category-title-size: 0.62rem;
+    --about-tech-gap: 0.35rem;
+    --about-tech-card-height: 3.1rem;
+    --about-tech-card-padding: 0.35rem;
+    --about-icon-size: 1.2rem;
+    --about-icon-text-size: 0.46rem;
+    --about-copy-width: 34rem;
+    --about-copy-size: 0.86rem;
+    --about-copy-padding: 1.2rem;
+    min-height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .about-me-description {
+    line-height: 1.5;
+  }
+
+  .stack-container--compact {
+    width: min(100%, 8.85rem);
+    min-height: 7.9rem;
+    flex: 0 1 8.85rem;
   }
 }
 
@@ -224,36 +234,43 @@
   }
 
   .stack-categories-container{
-    width: min(100%, 52rem);
-    gap: 0.85rem;
+    width: min(100%, 44rem);
+    gap: 0.65rem;
   }
 
   .stack-container{
-    width: min(100%, 11.5rem);
-    min-height: 10.75rem;
-    gap: 0.8rem;
-    padding: 0.9rem;
-    flex: 1 1 11rem;
+    width: min(100%, 10rem);
+    min-height: 9.5rem;
+    gap: 0.55rem;
+    padding: 0.7rem;
+    flex: 0 1 10rem;
+  }
+
+  .stack-container--compact {
+    width: min(100%, 9.4rem);
+    min-height: 8.85rem;
+    flex: 0 1 9.4rem;
   }
 
   .stack-category-title {
-    font-size: 0.92rem;
+    font-size: 0.76rem;
   }
 
   .tech-grid {
-    gap: 0.55rem;
+    gap: 0.45rem;
   }
 
   .tech-icon {
-    height: 1.9rem;
+    height: 1.45rem;
   }
 
   .tech-icon-container {
-    min-height: 4.25rem;
+    min-height: 3.7rem;
+    padding: 0.45rem;
   }
 
   .icon-text {
-    font-size: 0.68rem;
+    font-size: 0.55rem;
   }
 }
 
@@ -262,12 +279,12 @@
   .stack-title {
     font-size: 1.9rem;
     width: 100%;
-    max-width: 18ch;              
+    max-width: 18ch;
   }
 
   .about-description-container{
     width: 100%;
-    max-width: 44rem;          
+    max-width: 44rem;
     padding: 1.25em;
   }
 
@@ -280,6 +297,12 @@
     min-height: auto;
     padding: 0.85rem;
     gap: 0.75rem;
+  }
+
+  .stack-container--compact {
+    width: 100%;
+    min-height: auto;
+    flex: 1 1 100%;
   }
 
   .stack-category-title {
@@ -313,7 +336,7 @@
 
   .about-description-container{
     padding: 1em;
-    font-size: medium;           
+    font-size: medium;
   }
 
   .stack-container{
@@ -346,7 +369,9 @@
 
 @media (max-width: 380px) {
   .about-me-title,
-  .stack-title { font-size: 1.45rem; }
+  .stack-title {
+    font-size: 1.45rem;
+  }
 
   .stack-container {
     padding: 0.7rem;
@@ -399,5 +424,3 @@
     justify-content: flex-start;
   }
 }
-
-
