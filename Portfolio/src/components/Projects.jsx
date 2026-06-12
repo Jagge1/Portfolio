@@ -5,6 +5,7 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import useObserver from '../hooks/useObserver'
 import house18Logo from '../assets/house18-logo.png'
 import interactiveHouseLogo from '../assets/Interactive-house-logo.png'
+import bmiIcon from '../assets/BMI-icon.png'
 import portfolioPortraitFinal from '../assets/Portfolio-Portrait-final.png'
 import solaceLogo from '../assets/solace-logo.png'
 import tryggaLogo from '../assets/trygga-tillsammans.png'
@@ -67,6 +68,20 @@ const projects = [
     ],
     links: [
       {href: 'https://github.com/Jagge1/Portfolio', label: 'View project'},
+    ],
+  },
+  {
+    id: 'bmi-tracker',
+    image: bmiIcon,
+    alt: 'bmi-tracker-icon',
+    imageId: 'bmi-icon',
+    tech: ['Java', 'JUnit', 'EvoSuite', 'Jenkins'],
+    paragraphs: [
+      '"BMI Tracker" is a Java project created to demonstrate basic BMI calculation logic and automated testing.',
+      'The project includes manual JUnit 5 tests, EvoSuite-generated tests, and a sample Jenkins pipeline for compiling and running the test suite.',
+    ],
+    links: [
+      { href: 'https://github.com/Jagge1/BMI-Tracker', label: 'View project' },
     ],
   },
     {
