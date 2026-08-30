@@ -22,6 +22,7 @@ import dockerLogo from '../assets/docker-logo.png'
 import neovimLogo from '../assets/neovim-logo.png'
 import linuxLogo from '../assets/linux-logo-png.png'
 import rustLogo from '../assets/rust-logo.png'
+import csLogo from '../assets/csharp.png'
 
 export default function About(){
   useObserver()
@@ -63,6 +64,11 @@ export default function About(){
             <article className='tech-icon-container'>
               <img src={kotlinLogo} className='tech-icon' alt="" id='kotlin-logo'/>
               <p className='icon-text'>Kotlin</p>
+            </article>
+
+            <article className='tech-icon-container'>
+              <img src={csLogo} className='tech-icon' alt="" id='csharp-logo'/>
+              <p className='icon-text'>C#</p>
             </article>
           </div>
         </article>
