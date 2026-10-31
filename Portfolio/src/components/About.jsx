@@ -169,17 +169,16 @@ export default function About(){
               <img src={neovimLogo} className='tech-icon' alt="" id='neovim-logo'/>
               <p className='icon-text'>Neovim</p>
             </article>
+            <article className='tech-icon-container'>
+              <img src={linuxLogo} className='tech-icon' alt="" id='linux-logo'/>
+              <p className='icon-text'>Linux</p>
+            </article>
           </div>
         </article>
 
         <article className='stack-container stack-container--compact' id='currently-learning'>
           <h4 className='stack-category-title'>Currently Learning</h4>
           <div className='tech-grid'>
-            <article className='tech-icon-container'>
-              <img src={linuxLogo} className='tech-icon' alt="" id='linux-logo'/>
-              <p className='icon-text'>Linux</p>
-            </article>
-
             <article className='tech-icon-container'>
               <img src={rustLogo} className='tech-icon' alt="" id='rust-logo'/>
               <p className='icon-text'>Rust</p>
